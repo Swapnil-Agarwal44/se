@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        .navbar .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar .menu {
+            display: flex;
+        }
+
+        .menu a {
+            margin-left: 10px;
+        }
+
+        .container {
+    display: flex;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .right img {
+        max-width: 100%;
+        padding-right: 50px;
+    }
+        
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyLogo</div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <h1><b>My Resume</b></h1>
+    
+    <div class="container">
+    <div class="left">
+        <h2><b>Personal Information</b></h2>
+    <p><b>Name:</b> Swapnil Agarwal</p>
+    <p><b>Address:</b> B-006, Ansal Town, Indore</p>
+    <p><b>Email:</b>
+        <a href="mailto:tanishag.2608@gmail.com">agarwalswapnil222@gmail.com</a>
+    </p>
+    <p><b>Phone:</b> 6263020640</p>
+    </div>
+    <div class="right">
+        <img src="data:image/jpeg;base64,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">
+    </div>
+    </div>
+
+
+    <h2><b>Education</b></h2>
+    <table border="-">
+        <tr>
+            <th>Year</th>
+            <th>Qualification</th>
+            <th>Institute</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>2019</td>
+            <td>10th</td>
+            <td>CPS</td>
+            <td>90%</td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>12th</td>
+            <td>CPS</td>
+            <td>85%</td>
+        </tr>
+        <tr>
+            <td>2024</td>
+            <td>B.Tech</td>
+            <td>AITR</td>
+            <td>7.4 CGPA</td>
+        </tr>
+    </table>
+   
+    <h2><b>Interests</b></h2>
+    <p><b>Web Development</b></p>
+    <p><b>Programming</b></p>
+    <p><b>Reading</b></p>
+    <p><b>Travelling</b></p>
+    <h2><b>Languages</b></h2>
+    <p><b>English</b></p>
+    <p><b>Hindi</b></p>
+    <p><b>German</b></p>
+    <h2><b>References</b></h2>
+    <p><b>Mr. ABC</b></p>
+    <p><b>XYZ Company</b></p>
+    <p><b>Email:</b>
+        <a href="mailto: "></a>
+    </p>
+    <p><b>Phone:</b> 1234567890</p>
+    <p><b>Mr. PQR</b></p>
+    <p><b>ABC Company</b></p>
+    <p><b>Email:</b>
+        <a href="mailto: "></a>
+    </p>
+    <p><b>Phone:</b> 1234567890</p>
+
+</body>
+
+</html>
